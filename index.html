@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Wilson ❤️ Stella</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button id="backButton">❤️ Home</button>
+
+  <!-- INTRO SCREEN -->
+
+  <div class="intro-screen" id="introScreen">
+
+    <div class="intro-content">
+      <h1>Wilson ❤️ Stella</h1>
+      <p>Tap To Enter Our Love Story</p>
+    </div>
+
+  </div>
+
+  <!-- MUSIC -->
+
+  <audio id="bgMusic" loop>
+    <source src="music/love.mp3 Njerae" type="audio/mp3">
+  </audio>
+
+  <!-- FLOATING HEARTS -->
+
+  <div class="hearts"></div>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <h1 class="main-title">
+      Wilson ❤️ Stella
+    </h1>
+
+    <p class="anniversary-text">
+      Happy Anniversary ❤️ 1 Year
+    </p>
+
+    <!-- PHOTO ORBITS -->
+
+    <div class="orbit-container">
+
+      <div class="center-photo">
+        <img src="images/main.jpg">
+      </div>
+      <div class="orbit" id="orbit">
+        <img src="images/pic1.jpg">
+        <img src="images/pic2.jpg">
+        <img src="images/pic3.jpg">
+        <img src="images/pic4.jpg">
+        <img src="images/pic5.jpg">
+        <img src="images/pic6.jpg">
+        <img src="images/pic7.jpg">
+        <img src="images/pic8.jpg">
+        <img src="images/pic9.jpg">
+        <img src="images/pic10.jpg">
+        <img src="images/pic11.jpg">
+        <img src="images/pic12.jpg">
+        <img src="images/pic13.jpg">
+        <img src="images/pic14.jpg">
+        <img src="images/pic15.jpg">
+        <img src="images/pic16.jpg">
+        <img src="images/pic17.jpg">
+        <img src="images/pic18.jpg">
+        <img src="images/pic19.jpg">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- LOVE MESSAGE -->
+
+  <section class="message-section reveal">
+
+    <h2>To Stella ❤️</h2>
+
+    <p>
+      Every moment with you became a memory I never want to lose.
+      You brought happiness into my life in ways words cannot explain.
+      This website is just a small piece of how special you are to me.
+      Thank you for being my peace, my happiness and my favorite person.
+    </p>
+
+  </section>
+
+  <!-- LOVE TIMELINE -->
+
+  <section class="timeline-section reveal">
+
+    <h2>Our Journey ❤️</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>✨ The First Conversation</h3>
+        <p>Heeee, na kwako ni kusupuu, itabidi nimekuja lunch siku moja..</p>
+        <p>Waaa, tumechelewa  kutoka Kianjai but nitakuja tu.</p>
+        <p>weee kuja 'nitakuzindikisha' lol</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>💖 The First Feelings</h3>
+        <p>You remember when first nlikua na kiherehere ya kukutaka?</p>
+        <p>karibu nikule block lol, nkakua patient until our Friendship</p>
+        <p>became something deeper</p>
+        </div>
+
+      <div class="timeline-item">
+        <h3>🌹 Our Beautiful Moments</h3>
+        <p>Ice cream pale Faith ice, Kianjai walks, Meru Town, ASMR, Kupika nyama</p>
+        <p>Chips ile baze, Chilling together, Horror movies & other fun moments</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>❤️ June 1st</h3>
+        <p>A special day na tulikua tunacheza game ya ku assume.</p>
+        <p>Ati kuulizana swali iko kwa akili</p>
+        <P>it was around 1am to 3:04am</P>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REASONS -->
+
+  <section class="reasons-section reveal">
+
+    <h2>Reasons I Love You ❤️</h2>
+
+    <div class="reasons-grid">
+
+      <div class="reason-card">Your Smile 😊</div>
+      <div class="reason-card">Your Heart ❤️</div>
+      <div class="reason-card">Your Voice 🎶</div>
+      <div class="reason-card">Your Kindness 🌹</div>
+      <div class="reason-card">Your Support ✨</div>
+      <div class="reason-card">Everything About You Mamaaa 💖</div>
+
+    </div>
+
+  </section>
+
+  <!-- SECRET VIDEO -->
+
+  <section class="video-section reveal">
+
+    <h2 class="video-title">
+      A Special Surprise For You ❤️
+    </h2>
+
+    <div class="locked-video" id="lockedVideo">
+
+      <video id="surpriseVideo">
+        <source src="video/song.mp4" type="video/mp4">
+      </video>
+
+      <div class="blur-overlay" id="blurOverlay">
+
+        <div class="lock-content">
+          <h2>🔒 Click Me ❤️</h2>
+          <p>Only Us Know The Password</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CUSTOM PASSWORD POPUP -->
+
+    <div class="password-popup hidden" id="passwordPopup">
+
+      <div class="popup-box">
+
+        <h2>Enter Our Secret Password ❤️</h2>
+
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter password..."
+        >
+
+        <button id="unlockBtn">
+          Unlock ❤️
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- VIDEO CONTROLS -->
+
+    <div class="video-controls hidden" id="videoControls">
+
+      <div class="moving-text">
+        <span>am glad you found my song baby boo, dedicated to you my girl, i love you Stella❤️</span>
+      </div>
+      <p>Download Me Ill Play Smoothly in Your Files</p>
+
+      <a
+        href="video/song.mp4"
+        download
+        class="download-btn"
+      >
+        Download Me Here ❤️
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FINAL MESSAGE -->
+
+  <section class="final-section reveal">
+
+    <h2>I Love You Stella ❤️</h2>
+
+    <p>
+      No matter where life takes us,
+      you will always have a special place in my heart.
+    </p>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
